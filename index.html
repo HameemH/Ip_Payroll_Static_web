@@ -42,25 +42,25 @@
         <div class="border-end  mt-4  h-75 col-3">
           <div>
             <h3>Company Fund</h3>
-            <p>160000000</p>
+            <p id="cp">160000000</p>
           </div>
         </div>
         <div class="border-end  mt-4  h-75 col-3">
             <div>
                 <h3>Salary Of Employee</h3>
-                <p>5000000</p>
+                <p id="se">5000000</p>
               </div>
         </div>
         <div class="border-end  mt-4  h-75 col-3">
             <div>
                 <h3>Company Expenditure</h3>
-                <p>10000000</p>
+                <p id="ce">10000000</p>
               </div>
         </div>
         <div class="  mt-4  h-75 col-3">
             <div>
                 <h3>Company Loan</h3>
-                <p>20000000</p>
+                <p id="cl">20000000</p>
               </div>
         </div>
     </div>
@@ -71,10 +71,10 @@
         <div class="col-6 h-75 ">
             <div class="ComEx d-flex flex-column justify-content-evenly w-75 border border-1 mx-auto">
                 <h3 style="text-align: center;">Company Finance</h3>
-                <input class="w-75 mx-auto" type="number" name="" id="cashAdd" placeholder="This Month's Company Earning">
-                <input class="w-75 mx-auto" type="number" name="" id="loan" placeholder="Loan Paid">
-                <input class="w-75 mx-auto" type="number" name="" id="expen" placeholder="Comapny Expenses For This Month">
-                <button class="w-50 mx-auto" >Calculate  Finance</button>
+                <input class="w-75 mx-auto" type="number" name="" id="cashAdd" placeholder="This Month's Company Earning" required>
+                <input class="w-75 mx-auto" type="number" name="" id="loan" placeholder="Loan Paid" required>
+                <input class="w-75 mx-auto" type="number" name="" id="expen" placeholder="Comapny Expenses For This Month" required>
+                <button class="w-50 mx-auto" id="financebtn" >Calculate  Finance</button>
             </div>
         </div>
         <div class="col-6">
@@ -88,5 +88,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
