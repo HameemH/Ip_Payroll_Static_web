@@ -6,7 +6,6 @@ function ComapanyFinance()
     const expen =parseFloat( document.getElementById("expen").value);
     
     let companyFund=document.getElementById("cp")
-    let employeeSalary=document.getElementById("se")
     let companyExpense=document.getElementById("ce")
     let companyloan=document.getElementById("cl")
     

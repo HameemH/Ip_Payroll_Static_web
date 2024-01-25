@@ -24,3 +24,10 @@ body{
 .ComEx{
     height: 400px;
 }
+.emInfo{
+    margin-top: 20px;
+}
+
+.emInfo>div{
+    margin-top: 15px;
+}
