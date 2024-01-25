@@ -1,0 +1,26 @@
+body{
+    margin-left:10px ;
+    margin-right: 10px;
+}
+
+.cpInfo{
+    margin-top: 50px;
+    height: 200px;
+   
+}
+.cpInfo>div{
+   position: relative;
+   
+}
+.cpInfo>div>h3{
+    position: absolute;
+    top: 30%;
+}
+.cpInfo>div>div{
+    position: absolute;
+    top: 30%;
+}
+
+.ComEx{
+    height: 400px;
+}
