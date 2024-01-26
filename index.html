@@ -84,7 +84,7 @@
                 <input class="w-75 mx-auto" type="number" name="" id="leave" placeholder="Days Of Leave">
                 <input class="w-75 mx-auto" type="number" name="" id="bonus" placeholder="Bonus Of The Employee">
                 <input class="w-75 mx-auto" type="number" name="" id="emLoan" placeholder="EMI of Loan">
-                <button class="w-50 mx-auto" >Calculate  Salary</button>
+                <button class="w-50 mx-auto" onclick="salaryFunction()" >Calculate  Salary</button>
             </div>
         </div>
     </div>
@@ -95,12 +95,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
+                <div class="card-body" id="01">
+                  <h5 class="card-title " >Id: 01</h5>
                   <h5 class="card-title">Employee 01</h5>
                   <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                  <h5 class="card-title">Salary: <span class="salary">45000</span> </h5>
+                  <h5 class="card-title loan">Loan: 67500</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -109,12 +109,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="02">
+                  <h5 class="card-title" >Id: 02</h5>
+                  <h5 class="card-title">Employee 02</h5>
+                  <h5 class="card-title">Marketing</h5>
+                  <h5 class="card-title">Salary: <span class="salary">65000</span> </h5>
+                  <h5 class="card-title">Loan: 67500</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -123,12 +123,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="03">
+                  <h5 class="card-title" >Id: 03</h5>
+                  <h5 class="card-title">Employee 03</h5>
+                  <h5 class="card-title">Human Resources	</h5>
+                  <h5 class="card-title">Salary: <span class="salary">60000</span> </h5>
+                  <h5 class="card-title">Loan: 6500</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -137,12 +137,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="04">
+                  <h5 class="card-title" >Id: 04</h5>
+                  <h5 class="card-title">Employee 04</h5>
+                  <h5 class="card-title">Finance</h5>
+                  <h5 class="card-title">Salary: <span class="salary">75000</span> </h5>
+                  <h5 class="card-title">Loan: 85000</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -151,12 +151,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="05">
+                  <h5 class="card-title" >Id: 05</h5>
+                  <h5 class="card-title">Employee 05</h5>
+                  <h5 class="card-title">Operations</h5>
+                  <h5 class="card-title">Salary: <span class="salary">30000</span> </h5>
+                  <h5 class="card-title">Loan: 15500</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -165,12 +165,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="06">
+                  <h5 class="card-title" >Id: 06</h5>
+                  <h5 class="card-title">Employee 06</h5>
+                  <h5 class="card-title">Sales</h5>
+                  <h5 class="card-title">Salary: <span class="salary">45000</span> </h5>
+                  <h5 class="card-title">Loan: 66000</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -179,12 +179,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="07">
+                  <h5 class="card-title" >Id: 07</h5>
+                  <h5 class="card-title">Employee 07</h5>
+                  <h5 class="card-title">Customer Service	</h5>
+                  <h5 class="card-title">Salary: <span class="salary">35000</span> </h5>
+                  <h5 class="card-title">Loan: 6750</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -193,12 +193,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="08">
+                  <h5 class="card-title" >Id: 08</h5>
+                  <h5 class="card-title">Employee 08</h5>
+                  <h5 class="card-title">IT</h5>
+                  <h5 class="card-title">Salary: <span class="salary">50000</span> </h5>
+                  <h5 class="card-title">Loan: 00</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>
@@ -207,12 +207,12 @@
         <div class="col-4">
             <div class="card mx-auto " style="width: 18rem;">
                 <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" id="01">Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: 45,000</h5>
-                  <h5 class="card-title">Loan: 6,7500</h5>
+                <div class="card-body" id="09">
+                  <h5 class="card-title" >Id: 09</h5>
+                  <h5 class="card-title">Employee 09</h5>
+                  <h5 class="card-title">Legal</h5>
+                  <h5 class="card-title">Salary: <span class="salary">55000</span> </h5>
+                  <h5 class="card-title">Loan: 7500</h5>
                   
                   <a href="#" class="btn btn-primary">Pay Salary</a>
                 </div>

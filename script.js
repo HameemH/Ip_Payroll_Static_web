@@ -16,3 +16,11 @@ function ComapanyFinance()
    
     
 }
+
+
+function salaryFunction(){
+    let getId=document.getElementById("emId").value;
+    let element= document.getElementById(getId);
+    let salaryElement = element.querySelector(".salary");
+    console.log(salaryElement.textContent);
+}
