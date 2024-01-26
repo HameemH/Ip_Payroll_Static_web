@@ -27,7 +27,8 @@ function salaryFunction(){
 
     let element= document.getElementById(getId);
     let salaryElement = element.querySelector(".salary");
-    let loanElement =element.querySelector(".loan")
+    let loanElement =element.querySelector(".loan");
+    let payableSalary=element.querySelector(".payableSalary");
     
     let LeaveAmount=parseInt(getLeave)*300;
     let salary = parseInt(salaryElement.textContent);
@@ -36,8 +37,25 @@ function salaryFunction(){
     salary=(salary+parseFloat(bonus))-parseFloat(loanPay)-LeaveAmount;
     loan=loan- parseFloat(loanPay);
 
-    salaryElement.innerHTML=salary;
+    payableSalary.innerHTML=salary;
     loanElement.innerHTML=loan;
+
+
+}
+
+
+
+function paySalary( id)
+{
+    let element= document.getElementById(id);
+    let payableSalary=element.querySelector(".payableSalary");
+    let companyWholeSalary=document.getElementById('se');
+    let successMessage=element.querySelector('.message');
+   console.log(companyWholeSalary.textContent);
+    let wholeAmount = parseFloat(companyWholeSalary.textContent)-parseFloat(payableSalary.textContent);
+    payableSalary.innerHTML= '00';
+    companyWholeSalary.innerHTML=wholeAmount;
+    successMessage.innerHTML="Salary Paid";
 
 
 }
