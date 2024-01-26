@@ -20,7 +20,24 @@ function ComapanyFinance()
 
 function salaryFunction(){
     let getId=document.getElementById("emId").value;
+    let getLeave=document.getElementById("leave").value;
+    let bonus=document.getElementById("bonus").value;
+    let loanPay=document.getElementById("emLoan").value;
+
+
     let element= document.getElementById(getId);
     let salaryElement = element.querySelector(".salary");
-    console.log(salaryElement.textContent);
+    let loanElement =element.querySelector(".loan")
+    
+    let LeaveAmount=parseInt(getLeave)*300;
+    let salary = parseInt(salaryElement.textContent);
+    let loan=parseInt(loanElement.textContent);
+
+    salary=(salary+parseFloat(bonus))-parseFloat(loanPay)-LeaveAmount;
+    loan=loan- parseFloat(loanPay);
+
+    salaryElement.innerHTML=salary;
+    loanElement.innerHTML=loan;
+
+
 }
