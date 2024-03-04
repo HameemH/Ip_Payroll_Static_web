@@ -1,5 +1,4 @@
-function getData()
-{
+
     fetch("../Jsons/employee.json")
 .then((res)=>{
    return  res.json()
@@ -10,12 +9,13 @@ function getData()
     {
         localStorage.setItem('emps',JSON.stringify(data));
     }
+    showData();
 })
 .catch(error => {
     console.error('Error fetching data:', error);
   });
-}
-getData();
+
+
 
 
 function showData()
