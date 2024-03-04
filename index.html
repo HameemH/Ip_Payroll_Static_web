@@ -11,34 +11,109 @@
 </head>
 <body>
     <!-- Navbar part with logo and Name -->
-    <nav class="navbar navbar-light border rounded shadow " style="background-color: #055792;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./3890943_bag_cash_currency_dollar_money_icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Automated Payroll System
-          </a>
+    <nav class="navbar navbar-expand-lg navbar-light shadow " style="background-color: rgb(170, 206, 230);">
+      <div class="container-fluid">
+      
+        <a class="navbar-brand fw-bolder" href="./index.html">
+          <img src="./3890943_bag_cash_currency_dollar_money_icon.png" alt="" width="35" height="35" class="d-inline-block align-text-top ">
+          Automated Payroll System
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="w-50 " id="navbarNav">
+          <ul class=" navList">
+            <li class="nav-item ">
+              <a class="nav-link active fs-5" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active fs-5" href="./employee.html">Employees</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active fs-5" href="./calculation.html">Update Info</a>
+            </li>
+            
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
       <!-- Company Info Part -->
-      <div class="cpInfo bg-primary row w-100 mx-auto rounded shadow ">
+      <div class="cpInfo  row w-100 mx-auto">
 
-          <div class="border-end  mt-4  h-75 col-3">
+        
+          <div class="   mx-auto mt-4 col-4  cardInfo shadow" style="background:linear-gradient(to right,rgb(191, 234, 211),rgb(96, 175, 135));" >
             <h3 >500 Employees</h3>
           </div>
-          <div class="border-end  mt-4  h-75 col-3">
+        
+          <div class="mx-auto mt-4 col-4  cardInfo shadow" style="background:linear-gradient(to right,rgb(133, 184, 182),rgb(181, 242, 240));">
             <h3>35 Projects & Ongoing</h3>
           </div>
-          <div class="border-end  mt-4  h-75 col-3">
+          <div class="mx-auto mt-4 col-4  cardInfo shadow" style="background:linear-gradient(to right,rgb(240, 206, 221),rgb(235, 145, 184))">
             <h3>2 Locations</h3>
           </div>
-          <div class="  mt-4  h-75 col-3">
-            <h3>1300 Clients</h3>
-          </div>
+
+
+         
       </div>
       <!-- Company Accounts  -->
-      <div class="cpInfo bg-primary row w-100 mx-auto rounded shadow ">
+      <div class="cpInfo  row w-100 mx-auto  " >
+        <div class="  mx-auto mt-4 col-3  cardInfo1 shadow">
+          <div>
+            <p class="fw-bold">Company Fund</p>
+            <h3 id="cp">160000000</h3>
+          </div>
+        </div>
+        <div class="mx-auto mt-4 col-3  cardInfo1 shadow">
+          <div>
+              <p class="fw-bold">Salary Of Employee</p>
+              <h3 id="se">5000000</h3>
+            </div>
+      </div>
+      <div class="mx-auto mt-4 col-3  cardInfo1 shadow">
+          <div>
+              <p class="fw-bold">Company Expenditure</p>
+              <h3 id="ce">10000000</h3>
+            </div>
+      </div>
+      <div class=" mx-auto mt-4 col-3  cardInfo1 shadow">
+          <div>
+              <p class="fw-bold">Company Loan</p>
+              <h3 id="cl">20000000</h3>
+            </div>
+      </div>
+    </div>
 
+    <!-- Accounts Input Part -->
+     
+<!-- Employee Salary And info -->
+
+   <footer>
+         <div>
+          <div>
+            <h3>Automated Payroll System</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor adipisci numquam blanditiis in sed libero aspernatur cum, dolorem atque debitis.</p>
+            <div>
+              <ul class=”socials”>
+                <li><img src="./logos/367582_facebook_social_icon.png" alt="" width="35" height="35" class="d-inline-block align-text-top "></li>
+                <li><img src="./logos/5305170_bird_social media_social network_tweet_twitter_icon.png" alt="" width="35" height="35" class="d-inline-block align-text-top "></li>
+                <li><img src="./logos/5282542_linkedin_network_social network_linkedin logo_icon.png" alt="" width="35" height="35" class="d-inline-block align-text-top "></li>
+                <li><img src="./logos/5279112_camera_instagram_social media_instagram logo_icon.png" alt="" width="35" height="35" class="d-inline-block align-text-top "></li>
+              
+             </ul>
+            </div>
+            <h3>Copyright @ 2024 by The Great Group Of Lazys</h3>
+          </div>
+         </div>
+
+
+   </footer>
+
+    <script src="./Javascript/script.js"></script>
+</body>
+</html>
+
+<!-- 
         <div class="border-end  mt-4  h-75 col-3">
           <div>
             <h3>Company Fund</h3>
@@ -62,184 +137,4 @@
                 <h3>Company Loan</h3>
                 <p id="cl">20000000</p>
               </div>
-        </div>
-    </div>
-
-    <!-- Accounts Input Part -->
-     <h1 class="m-3" style="text-align: center;">Calculation Area</h1>
-    <div class="row m-5 " >
-        <div class="col-6 h-75 ">
-            <div class="ComEx d-flex flex-column justify-content-evenly w-75 border border-1 mx-auto">
-                <h3 style="text-align: center;">Company Finance</h3>
-                <input class="w-75 mx-auto" type="number" name="" id="cashAdd" placeholder="This Month's Company Earning" required>
-                <input class="w-75 mx-auto" type="number" name="" id="loan" placeholder="Loan Paid" required>
-                <input class="w-75 mx-auto" type="number" name="" id="expen" placeholder="Comapny Expenses For This Month" required>
-                <button class="w-50 mx-auto" id="financebtn" >Calculate  Finance</button>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="ComEx d-flex flex-column justify-content-evenly w-75 border border-1 mx-auto">
-                <h3 style="text-align: center;">Generating Salary</h3>
-                <input class="w-75 mx-auto" type="number" name="" id="emId" placeholder="Employee Id">
-                <input class="w-75 mx-auto" type="number" name="" id="leave" placeholder="Days Of Leave">
-                <input class="w-75 mx-auto" type="number" name="" id="bonus" placeholder="Bonus Of The Employee">
-                <input class="w-75 mx-auto" type="number" name="" id="emLoan" placeholder="EMI of Loan">
-                <button class="w-50 mx-auto" onclick="salaryFunction()" >Calculate  Salary</button>
-            </div>
-        </div>
-    </div>
-<!-- Employee Salary And info -->
-
-    <h1 class="mt-5" style="text-align: center;">Employee Info And Paying Salary</h1>
-    <div class="row emInfo">
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="01">
-                    <h5 class="card-title message " ></h5>
-                  <h5 class="card-title " >Id: 01</h5>
-                  <h5 class="card-title">Employee 01</h5>
-                  <h5 class="card-title">Software Development</h5>
-                  <h5 class="card-title">Salary: <span class="salary">45000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">67500</span> </h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('01')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="02">
-                    <h5 class="card-title message " ></h5>
-                  <h5 class="card-title" >Id: 02</h5>
-                  <h5 class="card-title">Employee 02</h5>
-                  <h5 class="card-title">Marketing</h5>
-                  <h5 class="card-title">Salary: <span class="salary">65000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">77700</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('02')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="03">
-                    <h5 class="card-title message " ></h5>
-                  <h5 class="card-title" >Id: 03</h5>
-                  <h5 class="card-title">Employee 03</h5>
-                  <h5 class="card-title">Human Resources	</h5>
-                  <h5 class="card-title">Salary: <span class="salary">60000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">6500</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('03')" >Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="04">
-                    <h5 class="card-title message " ></h5>
-                  <h5 class="card-title" >Id: 04</h5>
-                  <h5 class="card-title">Employee 04</h5>
-                  <h5 class="card-title">Finance</h5>
-                  <h5 class="card-title">Salary: <span class="salary">75000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">85000</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('04')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="05">
-                    <h5 class="card-title message " ></h5>
-                  <h5 class="card-title" >Id: 05</h5>
-                  <h5 class="card-title">Employee 05</h5>
-                  <h5 class="card-title">Operations</h5>
-                  <h5 class="card-title">Salary: <span class="salary">30000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">15500</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('05')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="06">
-                    <h5 class="card-title message " ></h5>  
-                  <h5 class="card-title" >Id: 06</h5>
-                  <h5 class="card-title">Employee 06</h5>
-                  <h5 class="card-title">Sales</h5>
-                  <h5 class="card-title">Salary: <span class="salary">45000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">66000</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('06')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="07">
-                    <h5 class="card-title message " ></h5>  
-                  <h5 class="card-title" >Id: 07</h5>
-                  <h5 class="card-title">Employee 07</h5>
-                  <h5 class="card-title">Customer Service	</h5>
-                  <h5 class="card-title">Salary: <span class="salary">35000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">6750</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('07')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="08">
-                    <h5 class="card-title message " ></h5>  
-                  <h5 class="card-title" >Id: 08</h5>
-                  <h5 class="card-title">Employee 08</h5>
-                  <h5 class="card-title">IT</h5>
-                  <h5 class="card-title">Salary: <span class="salary">50000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">33000</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('08')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card mx-auto " style="width: 18rem;">
-                <img src="./view-3d-businessman_23-2150709814.avif" class="card-img-top" alt="...">
-                <div class="card-body" id="09">
-                    <h5 class="card-title message " ></h5>
-                  <h5 class="card-title" >Id: 09</h5>
-                  <h5 class="card-title">Employee 09</h5>
-                  <h5 class="card-title">Legal</h5>
-                  <h5 class="card-title">Salary: <span class="salary">55000</span> </h5>
-                  <h5 class="card-title">Loan: <span class="loan">7500</span></h5>
-                  
-                 <h5 class="card-title">Payable Salary: <span class="payableSalary">00</span></h5>
-                  <a href="#" class="btn btn-primary" onclick="paySalary('09')">Pay Salary</a>
-                </div>
-              </div>
-        </div>
-
-          
-    </div>
-
-    <script src="./script.js"></script>
-</body>
-</html>
+        </div> -->

@@ -13,8 +13,7 @@ function ComapanyFinance()
     companyExpense.innerHTML=Number(companyExpense.textContent)+expen;
     companyloan.innerHTML=Number(companyloan.textContent)-loan;
   
-   
-    
+       
 }
 
 
@@ -51,11 +50,9 @@ function paySalary( id)
     let payableSalary=element.querySelector(".payableSalary");
     let companyWholeSalary=document.getElementById('se');
     let successMessage=element.querySelector('.message');
-   console.log(companyWholeSalary.textContent);
+    console.log(companyWholeSalary.textContent);
     let wholeAmount = parseFloat(companyWholeSalary.textContent)-parseFloat(payableSalary.textContent);
     payableSalary.innerHTML= '00';
     companyWholeSalary.innerHTML=wholeAmount;
     successMessage.innerHTML="Salary Paid";
-
-
 }
