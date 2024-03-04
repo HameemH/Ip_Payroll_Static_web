@@ -1,5 +1,5 @@
 
-    fetch("../Jsons/employee.json")
+fetch("../Jsons/employee.json")
 .then((res)=>{
    return  res.json()
 })
@@ -17,22 +17,22 @@
 
 
 
-
+  let emps=[]
 function showData()
 {
-    let emps=[]
+    
     if(localStorage.getItem('emps') !=null)
     {
        emps= JSON.parse(localStorage.getItem('emps'));
     }
     console.log(emps);
-
+    
     let result='';
     for(let i=0;i<emps.length;i++)
     {
-       console.log(emps[i]);
+       
         result+= `<div class="col-3 mx-auto mb-5" id=${emps[i].ID}>
-        <div class="card bg-light bg-gradient border rounded-3 mx-auto" style="width: 18rem; padding: 0;">
+        <div class="card bg-light bg-gradient border p-3 shadow mx-auto" style="width: 18rem; padding: 0; border-radius: 20px">
             <div class="d-flex">
              <img class="rounded-circle float-left m-2 p-1 border border-1 border-secondary " style="width: 100px; height: 100px;" src=${emps[i].img} alt="">
               <div class="my-2 ">
@@ -57,9 +57,40 @@ function showData()
     }
     
     let element = document.getElementById('emps');
+    let countElement= document.getElementById('count');
+    countElement.innerHTML=emps.length;
     element.innerHTML=result;
 }
 showData();
+
+
+function searchData()
+{
+   let srchId= document.getElementById('srchId').value;
+   let searchResult = document.getElementById('searchRes');
+   let res='';
+   for(let i=0;i<emps.length;i++)
+    {
+       
+             if(srchId==emps[i].ID)
+             {
+                res+=`<div class="card bg-light bg-gradient border rounded-3 mx-auto" style="width: 25rem; padding: 0; margin-top: 10px; ">
+                <div class="d-flex">
+                 <img class="rounded-circle float-left m-2 p-1 border border-1 border-secondary " style="width: 80px; height: 80px;" src=" ${emps[i].img}" alt="">
+                  <div class="my-2 ">
+                     <h6><b>ID: ${emps[i].ID}</b></h6>
+                    <h6 style="font-size: small;"> ${emps[i].Employe_Name}</h6>
+                    <h6 style="font-size: smaller;" class="text-muted"> ${emps[i].Employe_post}</h6>
+                
+                  </div>
+                </div>
+                 
+             </div>`
+             }
+    }
+    searchResult.innerHTML=res;
+  
+}
 
 
 
