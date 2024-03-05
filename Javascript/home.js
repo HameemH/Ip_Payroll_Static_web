@@ -7,6 +7,7 @@ fetch('../Jsons/financeInfo.json')
     {
         localStorage.setItem('finInfo',JSON.stringify(data));
     }
+    showData();
 })
 
 // This portion is to calculate salary
@@ -22,7 +23,9 @@ for(let i=0;i<emps.length;i++)
 
 // to the data from localstorage
 
-let finInfo=(JSON.parse(localStorage.getItem('finInfo')));
+function showData()
+{
+    let finInfo=(JSON.parse(localStorage.getItem('finInfo')));
 const finElement= document.getElementById('finInfo');
 
 let res= `<div class="  mx-auto mt-4 col-3  cardInfo1 shadow" style="background:linear-gradient(to right,rgb(158, 208, 209),rgb(209,239,240)
@@ -57,3 +60,4 @@ style="background:linear-gradient(to right,rgb(232,169,169),rgb(196,135,135))">
 
 finElement.innerHTML=res;
 
+}
