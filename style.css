@@ -115,7 +115,7 @@
 }
 .ComEx>input{
     border: 0px;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid ;
     background-color: rgb(249, 225, 225);
 } 
 textarea:focus, input:focus{
