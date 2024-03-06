@@ -50,7 +50,7 @@ function showData()
                 <h5 class="card-title">Salary Month: <span class="salaryMonth">${emps[i].Salary_month}</span></h5>
                 <div class="text-center m-1 pt-2">
                  <a href="#" class="btn btn-outline-primary" onclick=paySalary(${emps[i].ID})>Pay Salary</a>
-                 <a href="#" class="btn btn-outline-danger" onclick=paySalary(${emps[i].ID})>Delete</a>
+                 <a href="#" class="btn btn-outline-danger" onclick=deleteEmployee(${emps[i].ID})>Delete</a>
                 </div>
              </div>
          </div>
@@ -144,5 +144,17 @@ function paySalary( id)
     
 }
 
-
+function deleteEmployee(id)
+{
+     let flag =confirm('Do You want to Delete this?')
+        if(flag==true)
+        {
+            emps.splice(id-1, 1); 
+            localStorage.setItem('emps',JSON.stringify(emps));
+            alert('Employee Deleted');
+            showData();
+            
+        }
+          
+}
 
