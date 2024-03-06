@@ -51,9 +51,9 @@
 
 
 
-  <h1 class="m-3" style="text-align: center;">Calculation Area</h1>
+
   <div class="row m-5 ">
-    <div class="col-6 h-75 ">
+    <div class="col-6 h-75 mb-5 ">
       <div class="ComEx d-flex flex-column justify-content-evenly w-75 shadow  mx-auto">
         <h3 style="text-align: center;">Company Finance</h3>
         <input class="w-75 mx-auto" name="" id="cashAdd" placeholder="This Month's Company Earning" required>
@@ -62,7 +62,7 @@
         <button class="w-50 mx-auto btn btn-outline-dark" id="financebtn">Calculate Finance</button>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-6 mb-5">
       <div class="ComEx d-flex flex-column justify-content-evenly w-75 shadow mx-auto">
         <h3 style="text-align: center;">Generating Salary</h3>
         <input class="w-75 mx-auto" name="" id="emId" placeholder="Employee Id">
@@ -70,6 +70,23 @@
         <input class="w-75 mx-auto" name="" id="bonus" placeholder="Bonus Of The Employee">
         <input class="w-75 mx-auto" name="" id="emLoan" placeholder="EMI of Loan">
         <button class="w-50 mx-auto btn btn-outline-dark" onclick="salaryFunction()">Calculate Salary</button>
+      </div>
+    </div>
+    <div class="col-6 ">
+      <div class="ComEx d-flex flex-column justify-content-evenly w-75 shadow mx-auto">
+        <h3 style="text-align: center;">Add New Employee</h3>
+        <input class="w-75 mx-auto" name="" id="name" placeholder="Employee Name">
+        <input class="w-75 mx-auto" name="" id="post" placeholder="Employee Post">
+        <input class="w-75 mx-auto" name="" id="salary" placeholder="Salary Of The Employee">
+        <div class="w-75 mx-auto">
+          <label for="gender">Choose Gender:</label>
+        <select id="gender" name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          
+        </select>
+        </div>
+        <button class="w-50 mx-auto btn btn-outline-dark" onclick="createEmployee()">Add Employee</button>
       </div>
     </div>
   </div>
@@ -105,6 +122,9 @@
 
 
   </footer>
+
+
+  <script src="./Javascript/script.js"></script>
 </body>
 
 </html>

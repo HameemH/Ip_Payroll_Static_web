@@ -13,7 +13,10 @@ fetch('../Jsons/financeInfo.json')
 // This portion is to calculate salary
 let salary=0;
 let emps=[];
-emps=JSON.parse(localStorage.getItem('emps'));
+if(localStorage.getItem('emps')!=null)
+{
+    emps=JSON.parse(localStorage.getItem('emps'));
+}
 
 for(let i=0;i<emps.length;i++)
 {
@@ -32,7 +35,7 @@ let res= `<div class="  mx-auto mt-4 col-3  cardInfo1 shadow" style="background:
 ); ">
 <div>
 <p class="fw-bold">Company Fund</p>
-<h3 id="cp">${finInfo.cp}</h3>
+<h3 id="cf">${finInfo.cf}</h3>
 </div>
 </div>
 <div class="mx-auto mt-4 col-3  cardInfo1 shadow" style="background:linear-gradient(to right,rgb(222,143,235),rgb(158,118,171)

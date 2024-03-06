@@ -118,6 +118,10 @@
     border-bottom: 1px solid ;
     background-color: rgb(249, 225, 225);
 } 
+.ComEx>div>select{
+   
+    background-color: rgb(249, 225, 225);
+}
 textarea:focus, input:focus{
     outline: none;
 }
