@@ -8,7 +8,7 @@ fetch("../Jsons/employee.json")
     {
         localStorage.setItem('emps',JSON.stringify(data));
     }
-    calculateSalary();
+   
    
 })
 .catch(error => {
@@ -55,6 +55,7 @@ for(let i=0;i<emps.length;i++)
 
 function showData()
 {
+    calculateSalary();
     let finInfo=(JSON.parse(localStorage.getItem('finInfo')));
 const finElement= document.getElementById('finInfo');
 

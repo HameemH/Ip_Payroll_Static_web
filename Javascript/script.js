@@ -1,4 +1,4 @@
-// this portion will update the 
+// this portion will update the financial 
 let finInfo=(JSON.parse(localStorage.getItem('finInfo')));
 
 
@@ -87,7 +87,8 @@ function createEmployee()
         Salary_month:0}
     }
     else{
-        employee={
+        employee=
+        {
             img: img2,
             ID: String(Number(emps[emps.length-1].ID)+1),
             Employe_Name:name,
@@ -96,7 +97,8 @@ function createEmployee()
             Salary:Number(salary),
             Loan:0,
             Payable_Salary:0,
-            Salary_month:0}
+            Salary_month:0
+        }
     }
     emps.push(employee);
     localStorage.setItem('emps',JSON.stringify(emps));
