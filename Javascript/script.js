@@ -20,7 +20,7 @@ function ComapanyFinance()
     finInfo.cl=Number(companyloan)-loan;
     localStorage.setItem('finInfo',JSON.stringify(finInfo))
     alert('Finance Info Updated');
-    location.replace('../index.html');
+    location.replace('../index.html')
   
        
 }
@@ -77,7 +77,7 @@ function createEmployee()
     {
        employee={
         img: img1,
-        ID: String(emps.length+1),
+        ID: String(Number(emps[emps.length-1].ID)+1),
         Employe_Name:name,
         Employe_post:post,
         Gender:"Male",
@@ -89,7 +89,7 @@ function createEmployee()
     else{
         employee={
             img: img2,
-            ID: String(emps.length+1),
+            ID: String(Number(emps[emps.length-1].ID)+1),
             Employe_Name:name,
             Employe_post:post,
             Gender:"Female",
@@ -103,6 +103,25 @@ function createEmployee()
     alert('New Employee Added');
     location.replace('../employee.html');
 
+}
+
+
+function calculateLoan()
+{
+    const id=document.getElementById('id').value;
+    const loan= document.getElementById('emploan').value;
+    for(let i=0;i<emps.length;i++)
+    {
+        if(id==emps[i].ID)
+        {
+          emps[i].Loan=Number(emps[i].Loan)+Number(loan);
+        }
+        
+    }
+    localStorage.setItem('emps',JSON.stringify(emps));
+   alert(`Loan Updated of Employee ${id}`);
+   location.replace('../employee.html');
+    
 }
 
 

@@ -53,6 +53,7 @@
 
 
   <div class="row m-5 ">
+    <!-- 1st form -->
     <div class="col-6 h-75 mb-5 ">
       <div class="ComEx d-flex flex-column justify-content-evenly w-75 shadow  mx-auto">
         <h3 style="text-align: center;">Company Finance</h3>
@@ -62,6 +63,7 @@
         <button class="w-50 mx-auto btn btn-outline-dark" id="financebtn">Calculate Finance</button>
       </div>
     </div>
+    <!-- 2nd -->
     <div class="col-6 mb-5">
       <div class="ComEx d-flex flex-column justify-content-evenly w-75 shadow mx-auto">
         <h3 style="text-align: center;">Generating Salary</h3>
@@ -72,6 +74,7 @@
         <button class="w-50 mx-auto btn btn-outline-dark" onclick="salaryFunction()">Calculate Salary</button>
       </div>
     </div>
+    <!-- 3rd -->
     <div class="col-6 ">
       <div class="ComEx d-flex flex-column justify-content-evenly w-75 shadow mx-auto">
         <h3 style="text-align: center;">Add New Employee</h3>
@@ -87,6 +90,16 @@
         </select>
         </div>
         <button class="w-50 mx-auto btn btn-outline-dark" onclick="createEmployee()">Add Employee</button>
+      </div>
+    </div>
+    <!-- 4th -->
+    <div class="col-6 ">
+      <div class="ComEx d-flex flex-column justify-content-evenly w-75 shadow mx-auto">
+        <h3 style="text-align: center;">Add New Loan</h3>
+        <input class="w-75 mx-auto" name="" id="id" placeholder="Employee ID">
+        <input class="w-75 mx-auto" name="" id="emploan" placeholder="Loan Of The Employee">
+        
+        <button class="w-50 mx-auto btn btn-outline-dark" onclick="calculateLoan()">Calculate Loan</button>
       </div>
     </div>
   </div>

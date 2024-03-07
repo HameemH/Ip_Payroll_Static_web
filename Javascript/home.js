@@ -1,3 +1,26 @@
+fetch("../Jsons/employee.json")
+.then((res)=>{
+   return  res.json()
+})
+.then((data)=>{
+   
+    if(localStorage.getItem('emps')==null)
+    {
+        localStorage.setItem('emps',JSON.stringify(data));
+    }
+    calculateSalary();
+   
+})
+.catch(error => {
+    console.error('Error fetching data:', error);
+  });
+
+
+
+
+
+
+
 fetch('../Jsons/financeInfo.json')
 .then((res)=>{
     return res.json();
@@ -13,6 +36,9 @@ fetch('../Jsons/financeInfo.json')
 // This portion is to calculate salary
 let salary=0;
 let emps=[];
+function calculateSalary()
+{
+   
 if(localStorage.getItem('emps')!=null)
 {
     emps=JSON.parse(localStorage.getItem('emps'));
@@ -21,6 +47,7 @@ if(localStorage.getItem('emps')!=null)
 for(let i=0;i<emps.length;i++)
 {
     salary+=Number(emps[i].Salary);
+}
 }
 
 
